@@ -1,0 +1,2 @@
+overrides:
+  '@rspack/core': link:../../../rspack/packages/rspack
