@@ -1,6 +1,7 @@
 const { resolve } = require("path");
 /** @type {import("webpack").Configuration} */
 module.exports = {
+	mode: 'production',
 	resolve: {
 		extensions: [".ts", ".tsx", ".js"],
 		alias: {
@@ -35,9 +36,3 @@ if (require("webpack").version.startsWith("5")) {
 		},
 	];
 }
-
-module.exports.plugins = module.exports.plugins || [];
-module.exports.plugins.push(new (require("../../lib/build-plugin.cjs"))());
-
-module.exports.plugins = module.exports.plugins || [];
-module.exports.plugins.push(new (require("../../lib/build-plugin.cjs"))());
