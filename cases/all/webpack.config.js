@@ -13,7 +13,7 @@ module.exports = {
 		hashFunction: "xxhash64",
 	},
 	optimization: {
-		sideEffects: false,
+		minimize:false
 	},
 	experiments: {
 		cacheUnaffected: true,
